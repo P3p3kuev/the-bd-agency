@@ -1,61 +1,142 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The BD Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.6; }
-    nav a { margin-right: 1rem; text-decoration: none; color: #0070f3; }
-    .hero { margin-top: 2rem; }
-    .section { margin-top: 3rem; }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #1a1a1a;
+      background-color: #f7f9fb;
+    }
+    header, footer {
+      background-color: #0f172a;
+      color: white;
+      padding: 1.5rem 2rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #60a5fa;
+      font-weight: 600;
+    }
+    .hero {
+      padding: 6rem 2rem;
+      background: linear-gradient(to right, #2563eb, #1e3a8a);
+      color: white;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section:nth-child(even) {
+      background-color: #e2e8f0;
+    }
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .section p, .section ul {
+      font-size: 1.125rem;
+      line-height: 1.6;
+    }
     .cta-button {
       display: inline-block;
-      padding: 10px 20px;
-      background-color: #0070f3;
+      padding: 12px 28px;
+      background-color: #2563eb;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      transition: background 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #1e40af;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.875rem;
     }
   </style>
 </head>
 <body>
-  <h1>The BD Agency</h1>
-  <nav>
-    <a href="lead-generation.html">Lead Generation</a>
-    <a href="sales-training.html">Sales Training</a>
-    <a href="ai-caller.html">AI Caller</a>
-    <a href="#about">About Us</a>
-    <a href="#blog">Blog</a>
-  </nav>
+  <header>
+    <h1>The BD Agency</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="lead-generation.html">Lead Generation</a>
+      <a href="sales-training.html">Sales Training</a>
+      <a href="ai-caller.html">AI Caller</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <div class="hero">
-    <h2>Helping You Scale Sales with Tech, AI, and Proven Strategies</h2>
-    <p>We specialize in lead generation, AI-powered outreach, and sales enablement for growth-focused companies.</p>
-  </div>
+  <section class="hero">
+    <h2>Accelerate Your Pipeline with AI, Tech & GTM Experts</h2>
+    <p>Lead generation. Sales enablement. AI outreach. All done-for-you by proven revenue leaders who’ve built, scaled and sold with the best.</p>
+    <a href="#contact" class="cta-button">Contact Us</a>
+  </section>
 
-  <div class="section">
-    <h3>Our Services</h3>
+  <section class="section">
+    <h3>What We Do</h3>
+    <p>We help startups and scaleups unlock revenue with three core solutions:</p>
     <ul>
-      <li><a class="cta-button" href="lead-generation.html">Explore Lead Generation</a></li>
-      <li><a class="cta-button" href="sales-training.html">Explore Sales Training</a></li>
-      <li><a class="cta-button" href="ai-caller.html">Explore AI Caller</a></li>
+      <li><strong>Lead Generation</strong> – Hyper-targeted campaigns using Apollo, Lemlist, and intent data</li>
+      <li><strong>Sales Enablement</strong> – Playbooks, training, and coaching to uplevel your team</li>
+      <li><strong>AI Caller</strong> – A GPT voice-powered SDR that books meetings for you</li>
     </ul>
-  </div>
+    <a href="lead-generation.html" class="cta-button">Explore Our Services</a>
+  </section>
 
-  <div class="section" id="about">
-    <h3>About Us</h3>
-    <p>We're a team of brothers with over 20 years of experience in tech sales. We've helped scale teams and drive revenue at global companies including Microsoft, Salesforce, and Jabra. We now bring that expertise to startups and SMBs ready to level up.</p>
-  </div>
+  <section class="section" id="about">
+    <h3>About The BD Agency</h3>
+    <p>We're two brothers with deep experience in tech sales, from Microsoft to Salesforce to fast-scaling startups. We've carried quota, built partner channels, and now we help growth-stage companies install repeatable systems that close deals.</p>
+  </section>
 
-  <div class="section" id="blog">
-    <h3>Blog Highlights</h3>
+  <section class="section" id="blog">
+    <h3>Insights & Playbooks</h3>
+    <p>Fresh strategies from the field. Read our latest posts:</p>
     <ul>
       <li><a href="blog/email-marketing-fails.html">Why Email Marketing Fails (and How to Fix It)</a></li>
       <li><a href="blog/lead-gen-tactics-2025.html">Top 5 Lead Gen Tactics That Still Work in 2025</a></li>
       <li><a href="blog/cold-email-frameworks.html">Cold Email Frameworks That Convert</a></li>
     </ul>
-  </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Let’s Talk</h3>
+    <p>Need qualified leads, better conversion rates, or an AI assistant that books meetings? Let's build your custom sales engine.</p>
+    <a href="mailto:contact@thebdagency.com" class="cta-button">Contact Us</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 The BD Agency. All rights reserved.</p>
+  </footer>
 </body>
 </html>
