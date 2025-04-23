@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | The BD Agency</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafb;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1e3a8a;
+      padding: 2rem;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .blog-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+    .blog-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.25rem;
+      color: #1e3a8a;
+    }
+    .card-content p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .card-content a {
+      display: inline-block;
+      margin-top: 0.75rem;
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The BD Agency Blog</h1>
+    <p>Insights to grow pipeline, close faster, and scale smarter</p>
+  </header>
+
+  <section class="blog-grid">
+    <div class="blog-card">
+      <img src="https://source.unsplash.com/800x600/?email,marketing" alt="Email Marketing">
+      <div class="card-content">
+        <h2>Why Email Marketing Fails (And How to Fix It)</h2>
+        <p>Most email campaigns flop. Learn why and what to do differently.</p>
+        <a href="/blog/email-marketing-fails.html">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="https://source.unsplash.com/800x600/?lead,technology" alt="Lead Gen Tactics">
+      <div class="card-content">
+        <h2>Top 5 Lead Gen Tactics That Still Work in 2025</h2>
+        <p>From AI to intent data—these methods drive results in any market.</p>
+        <a href="/blog/lead-gen-tactics-2025.html">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="https://source.unsplash.com/800x600/?email,framework" alt="Cold Email Frameworks">
+      <div class="card-content">
+        <h2>Cold Email Frameworks That Convert</h2>
+        <p>Steal the proven structures we use to book high-quality meetings.</p>
+        <a href="/blog/cold-email-frameworks.html">Read More →</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
