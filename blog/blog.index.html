@@ -4,28 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog | The BD Agency</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f9fafb;
-      color: #1f2937;
-    }
-    header, footer {
-      background-color: #0f172a;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    h1, h2 {
-      color: #1e3a8a;
-    }
+    body { margin: 0; font-family: 'Inter', sans-serif; background-color: #f9fafb; color: #1a1a1a; }
+    header, footer { background-color: #0f172a; color: white; padding: 1.5rem 2rem; }
+    header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    nav a { margin-left: 1.5rem; text-decoration: none; color: #60a5fa; font-weight: 600; }
+    section { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; }
+    h1, h2 { color: #1e3a8a; }
     .blog-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -45,22 +31,21 @@
     .blog-card img {
       width: 100%;
       height: 180px;
-      object-fit: contain;
+      object-fit: cover;
+    }
+    .blog-card-content {
       padding: 1rem;
     }
-    .card-content {
-      padding: 1rem;
-    }
-    .card-content h3 {
-      font-size: 1.25rem;
-      margin-top: 0;
+    .blog-card-content h3 {
+      margin: 0;
       color: #1e3a8a;
+      font-size: 1.125rem;
     }
-    .card-content p {
+    .blog-card-content p {
       font-size: 0.95rem;
       color: #555;
     }
-    .card-content a {
+    .blog-card-content a {
       display: inline-block;
       margin-top: 0.75rem;
       text-decoration: none;
@@ -70,25 +55,24 @@
   </style>
 </head>
 <body>
-  <header style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap">
+  <header>
     <div><a href="index.html" style="text-decoration:none; color:white; font-weight:bold; font-size:1.5rem">The BD Agency</a></div>
-    <nav style="margin-top:1rem">
-      <a href="index.html" style="margin-right:1rem; color:#60a5fa; text-decoration:none; font-weight:600">Home</a>
-      <a href="lead-generation.html" style="margin-right:1rem; color:#60a5fa; text-decoration:none; font-weight:600">Lead Generation</a>
-      <a href="sales-training.html" style="margin-right:1rem; color:#60a5fa; text-decoration:none; font-weight:600">Sales Training</a>
-      <a href="ai-caller.html" style="margin-right:1rem; color:#60a5fa; text-decoration:none; font-weight:600">AI Caller</a>
-      <a href="blog.html" style="color:#60a5fa; text-decoration:none; font-weight:600">Blog</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="lead-generation.html">Lead Generation</a>
+      <a href="sales-training.html">Sales Training</a>
+      <a href="ai-caller.html">AI Caller</a>
+      <a href="blog.html">Blog</a>
     </nav>
-    <h1 style="width:100%; margin-top:2rem">The BD Agency Blog</h1>
-    <p>Insights to grow pipeline, close faster, and scale smarter</p>
   </header>
 
   <section>
-    <h2>Latest Articles</h2>
+    <h1>The BD Agency Blog</h1>
+    <p>Insights to grow pipeline, close faster, and scale smarter</p>
     <div class="blog-grid">
       <div class="blog-card">
         <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email Marketing Icon">
-        <div class="card-content">
+        <div class="blog-card-content">
           <h3>Why Email Marketing Fails (And How to Fix It)</h3>
           <p>Most email campaigns flop. Learn why and what to do differently.</p>
           <a href="/blog/email-marketing-fails.html">Read More →</a>
@@ -97,7 +81,7 @@
 
       <div class="blog-card">
         <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Lead Gen Icon">
-        <div class="card-content">
+        <div class="blog-card-content">
           <h3>Top 5 Lead Gen Tactics That Still Work in 2025</h3>
           <p>From AI to intent data—these methods drive results in any market.</p>
           <a href="/blog/lead-gen-tactics-2025.html">Read More →</a>
@@ -106,7 +90,7 @@
 
       <div class="blog-card">
         <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Cold Email Icon">
-        <div class="card-content">
+        <div class="blog-card-content">
           <h3>Cold Email Frameworks That Convert</h3>
           <p>Steal the proven structures we use to book high-quality meetings.</p>
           <a href="/blog/cold-email-frameworks.html">Read More →</a>
@@ -120,4 +104,3 @@
   </footer>
 </body>
 </html>
-
