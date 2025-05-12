@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The BD Agency | Let's Talk</title>
+  <title>The BD Agency</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f9fafb;
-      color: #1f2937;
+      color: #1a1a1a;
+      background-color: #f7f9fb;
     }
     header, footer {
       background-color: #0f172a;
@@ -26,49 +29,101 @@
     }
     nav a {
       margin-left: 1.5rem;
-      color: #60a5fa;
       text-decoration: none;
+      color: #60a5fa;
       font-weight: 600;
+    }
+    .hero {
+      padding: 6rem 2rem;
+      background: linear-gradient(to right, #2563eb, #1e3a8a);
+      color: white;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
     }
     .section {
       padding: 4rem 2rem;
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
     }
-    .section h2 {
-      font-size: 2.5rem;
-      color: #1e3a8a;
+    .section:nth-child(even) {
+      background-color: #e2e8f0;
     }
-    .section p {
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .section p, .section ul {
       font-size: 1.125rem;
       line-height: 1.6;
-      margin-bottom: 1.5rem;
     }
     .cta-button {
       display: inline-block;
-      padding: 14px 28px;
+      padding: 12px 28px;
       background-color: #2563eb;
       color: white;
       text-decoration: none;
       border-radius: 8px;
       font-weight: 600;
+      margin-top: 1.5rem;
       transition: background 0.3s;
     }
     .cta-button:hover {
       background-color: #1e40af;
     }
-    .whatsapp-link {
-      display: inline-block;
-      margin-top: 1rem;
-      background-color: #25d366;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-weight: 600;
-      text-decoration: none;
+    footer {
+      text-align: center;
+      font-size: 0.875rem;
     }
-    .whatsapp-link:hover {
-      background-color: #1ebe5d;
+
+    /* BLOG CARDS */
+    .blog-cards {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .blog-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.2s ease;
+    }
+    .blog-card:hover {
+      transform: scale(1.03);
+    }
+    .blog-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .blog-card-content {
+      padding: 1rem;
+    }
+    .blog-card-content h4 {
+      margin-top: 0;
+      color: #1e3a8a;
+      font-size: 1.125rem;
+    }
+    .blog-card-content p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .blog-card-content a {
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 0.75rem;
     }
     form {
       margin-top: 2rem;
@@ -95,10 +150,18 @@
     button:hover {
       background-color: #1e40af;
     }
-    footer {
-      text-align: center;
-      font-size: 0.875rem;
-      margin-top: 4rem;
+    .whatsapp-link {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .whatsapp-link:hover {
+      background-color: #1ebe5d;
     }
   </style>
 </head>
@@ -110,14 +173,67 @@
       <a href="lead-generation.html">Lead Generation</a>
       <a href="sales-training.html">Sales Training</a>
       <a href="ai-caller.html">AI Caller</a>
-      <a href="blog.html">Blog</a>
-      <a href="#">Contact</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
+  <section class="hero">
+    <h2>Accelerate Your Pipeline with AI, Tech & GTM Experts</h2>
+    <p>Lead generation. Sales enablement. AI outreach. All done-for-you by proven revenue leaders who’ve built, scaled and sold with the best.</p>
+    <a href="#contact" class="cta-button">Contact Us</a>
+  </section>
+
   <section class="section">
-    <h2>Start a Conversation</h2>
-    <p>Whether you're looking to scale outreach, increase lead flow, or install a custom AI SDR, we can help. Drop us a message and let's build your pipeline together.</p>
+    <h3>What We Do</h3>
+    <p>We help startups and scaleups unlock revenue with three core solutions:</p>
+    <ul>
+      <li><strong>Lead Generation</strong> – Hyper-targeted campaigns using Apollo, Lemlist, and intent data</li>
+      <li><strong>Sales Enablement</strong> – Playbooks, training, and coaching to uplevel your team</li>
+      <li><strong>AI Caller</strong> – A GPT voice-powered SDR that books meetings for you</li>
+    </ul>
+    <a href="lead-generation.html" class="cta-button">Explore Our Services</a>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About The BD Agency</h3>
+    <p>We're two brothers with deep experience in tech sales, from Microsoft to Salesforce to fast-scaling startups. We've carried quota, built partner channels, and now we help growth-stage companies install repeatable systems that close deals.</p>
+  </section>
+
+  <section class="section" id="blog">
+    <h3>Insights & Playbooks</h3>
+    <p>Fresh strategies from the field. Read our latest posts:</p>
+    <div class="blog-cards">
+      <div class="blog-card">
+        <img src="https://source.unsplash.com/featured/?email,marketing" alt="Email Marketing">
+        <div class="blog-card-content">
+          <h4>Why Email Marketing Fails</h4>
+          <p>Most campaigns underperform. Here's why—and what to change.</p>
+          <a href="blog/email-marketing-fails.html">Read More →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="https://source.unsplash.com/featured/?leads,marketing" alt="Lead Gen">
+        <div class="blog-card-content">
+          <h4>Lead Gen Tactics That Still Work</h4>
+          <p>From intent data to AI follow-up—here’s what still gets results.</p>
+          <a href="blog/lead-gen-tactics-2025.html">Read More →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="https://source.unsplash.com/featured/?email,tech" alt="Cold Email">
+        <div class="blog-card-content">
+          <h4>Cold Email Frameworks That Convert</h4>
+          <p>Our best-performing formats from 1,000+ campaigns.</p>
+          <a href="blog/cold-email-frameworks.html">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Let’s Talk</h3>
+    <p>Need qualified leads, better conversion rates, or an AI assistant that books meetings? Let's build your custom sales engine.</p>
 
     <form action="mailto:contact@thebdagency.com" method="post" enctype="text/plain">
       <input type="text" name="name" placeholder="Your Name" required />
@@ -126,21 +242,8 @@
       <button type="submit">Send Inquiry</button>
     </form>
 
-    <p>Prefer to chat directly? Click below to reach us on WhatsApp.</p>
+    <p>Prefer to chat directly?</p>
     <a href="https://wa.me/971585014000" class="whatsapp-link" target="_blank">Message Us on WhatsApp</a>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 The BD Agency. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-
-
-  <section class="section" id="contact">
-    <h3>Let’s Talk</h3>
-    <p>Need qualified leads, better conversion rates, or an AI assistant that books meetings? Let's build your custom sales engine.</p>
-    <a href="mailto:contact@thebdagency.com" class="cta-button">Contact Us</a>
   </section>
 
   <footer>
