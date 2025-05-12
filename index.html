@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The BD Agency</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
     * {
       box-sizing: border-box;
@@ -103,8 +103,7 @@
     .blog-card img {
       width: 100%;
       height: 180px;
-      object-fit: contain;
-      padding: 1rem;
+      object-fit: cover;
     }
     .blog-card-content {
       padding: 1rem;
@@ -129,20 +128,20 @@
 </head>
 <body>
   <header>
-    <h1>The BD Agency</h1>
+    <h1 style="font-size: 1.5rem; font-weight: 800;">The BD Agency</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="lead-generation.html">Lead Generation</a>
       <a href="sales-training.html">Sales Training</a>
       <a href="ai-caller.html">AI Caller</a>
-      <a href="blog.html">Blog</a>
+      <a href="/blog/">Blog</a> <!-- Corrected link for Vercel -->
     </nav>
   </header>
 
   <section class="hero">
     <h2>Accelerate Your Pipeline with AI, Tech & GTM Experts</h2>
     <p>Lead generation. Sales enablement. AI outreach. All done-for-you by proven revenue leaders who’ve built, scaled and sold with the best.</p>
-    <a href="lead-generation.html" class="cta-button">Get Started</a>
+    <a href="#contact" class="cta-button">Contact Us</a>
   </section>
 
   <section class="section">
@@ -156,35 +155,53 @@
     <a href="lead-generation.html" class="cta-button">Explore Our Services</a>
   </section>
 
+  <section class="section" id="about">
+    <h3>About The BD Agency</h3>
+    <p>We're two brothers with deep experience in tech sales, from Microsoft to Salesforce to fast-scaling startups. We've carried quota, built partner channels, and now we help growth-stage companies install repeatable systems that close deals.</p>
+  </section>
+
   <section class="section" id="blog">
     <h3>Insights & Playbooks</h3>
     <p>Fresh strategies from the field. Read our latest posts:</p>
     <div class="blog-cards">
       <div class="blog-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email Marketing Icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email Marketing">
         <div class="blog-card-content">
           <h4>Why Email Marketing Fails</h4>
           <p>Most campaigns underperform. Here's why—and what to change.</p>
-          <a href="blog/email-marketing-fails.html">Read More →</a>
+          <a href="email-marketing-fails.html">Read More →</a>
         </div>
       </div>
       <div class="blog-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Lead Gen Icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Lead Gen">
         <div class="blog-card-content">
           <h4>Lead Gen Tactics That Still Work</h4>
           <p>From intent data to AI follow-up—here’s what still gets results.</p>
-          <a href="blog/lead-gen-tactics-2025.html">Read More →</a>
+          <a href="lead-gen-tactics-2025.html">Read More →</a>
         </div>
       </div>
       <div class="blog-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Cold Email Icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Cold Email">
         <div class="blog-card-content">
           <h4>Cold Email Frameworks That Convert</h4>
           <p>Our best-performing formats from 1,000+ campaigns.</p>
-          <a href="blog/cold-email-frameworks.html">Read More →</a>
+          <a href="cold-email-frameworks.html">Read More →</a>
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Let’s Talk</h3>
+    <p>Need qualified leads, better conversion rates, or an AI assistant that books meetings? Let's build your custom sales engine.</p>
+    <form action="mailto:contact@thebdagency.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Tell us what you need..." required></textarea>
+      <button type="submit" style="margin-top: 1rem; padding: 12px 28px; background-color: #2563eb; color: white; border: none; border-radius: 6px; font-weight: 600; font-size: 1rem;">Send Inquiry</button>
+    </form>
+    <p style="margin-top: 1rem;">Prefer to chat directly?</p>
+    <a href="https://wa.me/971585014000" class="cta-button" style="background-color: #25d366">Message Us on WhatsApp</a>
   </section>
 
   <footer>
