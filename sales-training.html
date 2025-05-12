@@ -1,146 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sales Training & Enablement | The BD Agency</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sales Training | The BD Agency</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f9fafb;
-      color: #1f2937;
-    }
-    header, footer {
-      background-color: #0f172a;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    h1, h2, h3 {
-      color: #1e3a8a;
-    }
-    p, li {
-      font-size: 1.125rem;
-      line-height: 1.6;
-    }
-    ul {
-      padding-left: 1.25rem;
-    }
+    body { margin: 0; font-family: 'Inter', sans-serif; background: #f9fafb; color: #1a1a1a; }
+    header, footer { background: #0f172a; color: white; padding: 1.5rem 2rem; }
+    nav a { margin-right: 1.5rem; text-decoration: none; color: #60a5fa; font-weight: 600; }
+    .section { max-width: 1000px; margin: 0 auto; padding: 4rem 2rem; }
+    .section h2 { font-size: 2rem; color: #1e3a8a; margin-bottom: 1rem; }
     .cta-button {
-      display: inline-block;
-      padding: 14px 28px;
-      background-color: #2563eb;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      margin-top: 2rem;
+      display: inline-block; margin-top: 2rem;
+      padding: 12px 28px; background-color: #2563eb; color: white;
+      border-radius: 8px; text-decoration: none; font-weight: 600;
     }
-    .cta-button:hover {
-      background-color: #1e40af;
-    }
-    .content-section {
-      display: flex;
-      align-items: flex-start;
-      gap: 2rem;
-      margin-bottom: 3rem;
-    }
-    .content-section img {
-      width: 140px;
-      height: auto;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    input, textarea {
-      padding: 12px;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      width: 100%;
-    }
-    button[type="submit"] {
-      background-color: #2563eb;
-      color: white;
-      border: none;
-      padding: 12px;
-      font-size: 1rem;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    button[type="submit"]:hover {
-      background-color: #1e40af;
-    }
+    .cta-button:hover { background-color: #1e40af; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Sales Training & Enablement</h1>
+  <header style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap">
+    <a href="index.html" style="text-decoration:none; color:white; font-size:1.5rem; font-weight:800;">The BD Agency</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="lead-generation.html">Lead Generation</a>
+      <a href="sales-training.html">Sales Training</a>
+      <a href="ai-caller.html">AI Caller</a>
+      <a href="blog.html">Blog</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>Transform Reps Into Revenue Leaders</h2>
-    <p>The BD Agency delivers modern sales training designed for today’s B2B landscape. Whether you're onboarding new reps or upskilling seasoned pros, our frameworks are built to drive predictable, repeatable revenue results.</p>
-    <a href="#contact-form" class="cta-button">Request Sales Enablement Info</a>
+  <section class="section">
+    <h2>Sales Training & Enablement</h2>
+    <p>Equip your team with proven frameworks and battle-tested sales tactics. Our enablement programs are customized for SaaS and B2B teams looking to scale pipeline and close faster.</p>
+
+    <h2>Training Topics</h2>
+    <ul>
+      <li>Discovery & qualification using MEDDIC</li>
+      <li>Objection handling frameworks</li>
+      <li>Proposal and closing strategy</li>
+      <li>Playbook creation and onboarding ramp-up</li>
+    </ul>
+
+    <h2>Delivery Format</h2>
+    <ul>
+      <li>Live virtual or on-site sessions</li>
+      <li>Workshops, recordings, and templates</li>
+      <li>1:1 coaching for sales managers or reps</li>
+    </ul>
+
+    <a href="mailto:contact@thebdagency.com" class="cta-button">Request Training Info</a>
   </section>
 
-  <section class="content-section">
-    <img src="https://cdn-icons-png.flaticon.com/512/4339/4339866.png" alt="Frameworks Icon">
-    <div>
-      <h3>What We Teach</h3>
-      <ul>
-        <li>Discovery techniques that uncover business pain</li>
-        <li>Value-based selling frameworks (inspired by MEDDIC & Challenger)</li>
-        <li>Objection handling for technical, pricing, and timing roadblocks</li>
-        <li>How to close with confidence — and avoid discounting</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="content-section">
-    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="Teams Icon">
-    <div>
-      <h3>Who It's For</h3>
-      <p>Our sessions are designed for SaaS and tech sales teams — from SDRs to AEs to managers. We customize each training based on your industry, buyer journey, and growth goals.</p>
-    </div>
-  </section>
-
-  <section class="content-section">
-    <img src="https://cdn-icons-png.flaticon.com/512/10785/10785773.png" alt="Delivery Icon">
-    <div>
-      <h3>How It's Delivered</h3>
-      <ul>
-        <li>Live virtual workshops or in-person sessions</li>
-        <li>Interactive role plays, worksheets, and live deal reviews</li>
-        <li>Post-training coaching and reinforcement (optional)</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contact-form">
-    <h3>Let’s Elevate Your Sales Team</h3>
-    <p>Fill out the form below to receive a custom sales training proposal tailored to your business goals.</p>
-    <form action="mailto:contact@thebdagency.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Tell us what you need..." required></textarea>
-      <button type="submit">Send Inquiry</button>
-    </form>
-    <p>Prefer to chat directly?</p>
-    <a href="https://wa.me/971585014000" class="cta-button" style="background-color:#25d366">Message Us on WhatsApp</a>
-  </section>
-
-  <footer>
+  <footer style="text-align:center; font-size:0.875rem;">
     <p>&copy; 2025 The BD Agency. All rights reserved.</p>
   </footer>
 </body>
