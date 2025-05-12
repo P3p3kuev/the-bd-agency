@@ -125,44 +125,6 @@
       display: inline-block;
       margin-top: 0.75rem;
     }
-    form {
-      margin-top: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    input, textarea {
-      padding: 1rem;
-      border-radius: 6px;
-      border: 1px solid #cbd5e0;
-      font-size: 1rem;
-    }
-    button {
-      padding: 1rem 2rem;
-      background-color: #2563eb;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #1e40af;
-    }
-    .whatsapp-link {
-      display: inline-block;
-      margin-top: 1rem;
-      background-color: #25d366;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    .whatsapp-link:hover {
-      background-color: #1ebe5d;
-    }
   </style>
 </head>
 <body>
@@ -234,16 +196,7 @@
   <section class="section" id="contact">
     <h3>Let’s Talk</h3>
     <p>Need qualified leads, better conversion rates, or an AI assistant that books meetings? Let's build your custom sales engine.</p>
-
-    <form action="mailto:contact@thebdagency.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Tell us what you need..." required></textarea>
-      <button type="submit">Send Inquiry</button>
-    </form>
-
-    <p>Prefer to chat directly?</p>
-    <a href="https://wa.me/971585014000" class="whatsapp-link" target="_blank">Message Us on WhatsApp</a>
+    <a href="mailto:contact@thebdagency.com" class="cta-button">Contact Us</a>
   </section>
 
   <footer>
