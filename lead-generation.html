@@ -15,12 +15,12 @@
     header, footer {
       background-color: #0f172a;
       color: white;
-      padding: 1.5rem 2rem;
+      padding: 2rem;
       text-align: center;
     }
     section {
       padding: 4rem 2rem;
-      max-width: 900px;
+      max-width: 1100px;
       margin: 0 auto;
     }
     h1, h2, h3 {
@@ -35,7 +35,7 @@
     }
     .cta-button {
       display: inline-block;
-      padding: 12px 24px;
+      padding: 14px 28px;
       background-color: #2563eb;
       color: white;
       text-decoration: none;
@@ -44,6 +44,41 @@
       margin-top: 2rem;
     }
     .cta-button:hover {
+      background-color: #1e40af;
+    }
+    .content-section {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .content-section img {
+      width: 120px;
+      height: auto;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    input, textarea {
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 100%;
+    }
+    button[type="submit"] {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
       background-color: #1e40af;
     }
   </style>
@@ -55,26 +90,42 @@
 
   <section>
     <h2>Precision-Powered B2B Lead Generation</h2>
-    <p>$1</p>
+    <p>At The BD Agency, we don't just deliver leads — we deliver sales opportunities. With a mix of deep industry knowledge, advanced tools like Apollo and Clay, and AI-personalized messaging, we ensure you're in front of the right people at the right time.</p>
     <a href="#contact-form" class="cta-button">Request a Campaign Strategy</a>
   </section>
 
-  <section>
-    <h3>What Makes Our Lead Gen Different</h3>
-    <img src="https://source.unsplash.com/100x100/?strategy" alt="Lead Strategy Icon" style="float:right;margin:10px;">
-    <ul>$1</ul>
+  <section class="content-section">
+    <img src="https://cdn-icons-png.flaticon.com/512/1484/1484862.png" alt="Lead Strategy Icon">
+    <div>
+      <h3>What Makes Our Lead Gen Different</h3>
+      <ul>
+        <li>AI-personalized messaging at scale</li>
+        <li>Intent-based targeting and segmentation</li>
+        <li>Campaigns tested and refined weekly</li>
+        <li>Full-funnel visibility and reporting</li>
+      </ul>
+    </div>
   </section>
 
-  <section>
-    <h3>Industries We Excel In</h3>
-    <img src="https://source.unsplash.com/100x100/?industry" alt="Industries Icon" style="float:right;margin:10px;">
-    <p>$1</p>
+  <section class="content-section">
+    <img src="https://cdn-icons-png.flaticon.com/512/3449/3449914.png" alt="Industries Icon">
+    <div>
+      <h3>Industries We Excel In</h3>
+      <p>We specialize in B2B sectors including SaaS, cloud computing, IT consulting, fintech, and professional services. Whether you're launching a new product or scaling into new markets, we’ll identify your top buyers fast.</p>
+    </div>
   </section>
 
-  <section>
-    <h3>What You Get</h3>
-    <img src="https://source.unsplash.com/100x100/?checklist" alt="What You Get Icon" style="float:right;margin:10px;">
-    <ul>$1</ul>
+  <section class="content-section">
+    <img src="https://cdn-icons-png.flaticon.com/512/1907/1907555.png" alt="What You Get Icon">
+    <div>
+      <h3>What You Get</h3>
+      <ul>
+        <li>Hand-built ICP lists with verified contact data</li>
+        <li>Custom email + LinkedIn sequences</li>
+        <li>Weekly reporting with booked meetings</li>
+        <li>CRM integration & lead tracking (optional)</li>
+      </ul>
+    </div>
   </section>
 
   <section id="contact-form">
@@ -95,3 +146,4 @@
   </footer>
 </body>
 </html>
+
