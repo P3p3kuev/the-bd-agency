@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Caller | The BD Agency</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Training | The BD Agency</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body { margin: 0; font-family: 'Inter', sans-serif; background: #f9fafb; color: #1a1a1a; }
-    header, footer { background: #0f172a; color: white; padding: 1.5rem 2rem; }
-    nav a { margin-right: 1.5rem; text-decoration: none; color: #60a5fa; font-weight: 600; }
-    .section { max-width: 1000px; margin: 0 auto; padding: 4rem 2rem; }
-    .section h2 { font-size: 2rem; color: #1e3a8a; margin-bottom: 1rem; }
+    body { margin: 0; font-family: 'Inter', sans-serif; background-color: #f9fafb; color: #1f2937; }
+    header, footer { background-color: #0f172a; color: white; padding: 1.5rem 2rem; }
+    header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    nav a { margin-left: 1.5rem; text-decoration: none; color: #60a5fa; font-weight: 600; }
+    section { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; }
+    h1, h2, h3 { color: #1e3a8a; }
+    p, li { font-size: 1.125rem; line-height: 1.6; }
+    ul { padding-left: 1.25rem; }
     .cta-button {
-      display: inline-block; margin-top: 2rem;
-      padding: 12px 28px; background-color: #2563eb; color: white;
-      border-radius: 8px; text-decoration: none; font-weight: 600;
+      display: inline-block; padding: 14px 28px; background-color: #2563eb;
+      color: white; text-decoration: none; border-radius: 8px; font-weight: 600; margin-top: 2rem;
     }
     .cta-button:hover { background-color: #1e40af; }
+    .content-section {
+      display: flex; align-items: center; gap: 2rem;
+      margin-bottom: 3rem; flex-wrap: wrap;
+    }
+    .content-section img {
+      width: 120px;
+      height: auto;
+    }
+    form {
+      display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;
+    }
+    input, textarea {
+      padding: 12px; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px; width: 100%;
+    }
+    button[type="submit"] {
+      background-color: #2563eb; color: white; border: none; padding: 12px;
+      font-size: 1rem; border-radius: 6px; cursor: pointer;
+    }
+    button[type="submit"]:hover { background-color: #1e40af; }
   </style>
 </head>
 <body>
-  <header style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap">
-    <a href="index.html" style="text-decoration:none; color:white; font-size:1.5rem; font-weight:800;">The BD Agency</a>
+  <header>
+    <div><a href="index.html" style="text-decoration:none; color:white; font-weight:bold; font-size:1.5rem">The BD Agency</a></div>
     <nav>
       <a href="index.html">Home</a>
       <a href="lead-generation.html">Lead Generation</a>
@@ -31,22 +52,55 @@
     </nav>
   </header>
 
-  <section class="section">
-    <h2>Meet Your 24/7 AI Sales Rep</h2>
-    <p>Our AI Caller is a voice-enabled sales assistant powered by GPT that follows scripts, handles objections, and sets meetings — all using your tone and voice. It's like cloning your best SDR, without the headcount.</p>
-
-    <h2>What It Can Do</h2>
-    <ul>
-      <li>Call leads with personalized outbound scripts</li>
-      <li>Respond to common objections or questions</li>
-      <li>Book meetings directly to your calendar</li>
-      <li>Trigger automated email/SMS follow-ups</li>
-    </ul>
-
-    <a href="mailto:contact@thebdagency.com" class="cta-button">See a Demo</a>
+  <section>
+    <h1>Sales Training Services</h1>
+    <h2>Modern Sales Enablement for High-Performing Teams</h2>
+    <p>We help your reps master qualification, handle objections, and close deals faster. Our programs are built on real-world experience and tailored to your tech stack and industry.</p>
+    <a href="#contact-form" class="cta-button">Request a Training Plan</a>
   </section>
 
-  <footer style="text-align:center; font-size:0.875rem;">
+  <section class="content-section">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Workshop Icon">
+    <div>
+      <h3>What We Cover</h3>
+      <ul>
+        <li>Discovery calls and qualification using MEDDIC</li>
+        <li>Objection handling frameworks</li>
+        <li>Proposal strategy and multi-threading</li>
+        <li>Pipeline reviews and coaching methods</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png" alt="Delivery Icon">
+    <div>
+      <h3>Flexible Delivery</h3>
+      <p>We offer live workshops (in-person or virtual), recordings, coaching sessions, and custom-built sales playbooks that your team can use immediately.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <img src="https://cdn-icons-png.flaticon.com/512/3581/3581343.png" alt="Who It’s For Icon">
+    <div>
+      <h3>Who It’s For</h3>
+      <p>We train startup founders, SDRs, AEs, and full-cycle closers in B2B SaaS, IT consulting, cloud, and fintech. Whether you’re onboarding juniors or levelling up pros, we’ve got you.</p>
+    </div>
+  </section>
+
+  <section id="contact-form">
+    <h3>Let’s Uplevel Your Sales Team</h3>
+    <form action="mailto:contact@thebdagency.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Tell us what your team needs..." required></textarea>
+      <button type="submit">Send Inquiry</button>
+    </form>
+    <p>Prefer to chat directly?</p>
+    <a href="https://wa.me/971585014000" class="cta-button" style="background-color:#25d366">Message Us on WhatsApp</a>
+  </section>
+
+  <footer>
     <p>&copy; 2025 The BD Agency. All rights reserved.</p>
   </footer>
 </body>
