@@ -1,9 +1,9 @@
 {
+  "cleanUrls": true,
   "rewrites": [
     { "source": "/blog", "destination": "/blog/index.html" },
     { "source": "/blog/", "destination": "/blog/index.html" },
     { "source": "/blog/index", "destination": "/blog/index.html" },
-
     { "source": "/blog/email-marketing-fails", "destination": "/blog/email-marketing-fails.html" },
     { "source": "/blog/lead-gen-tactics-2025", "destination": "/blog/lead-gen-tactics-2025.html" },
     { "source": "/blog/cold-email-frameworks", "destination": "/blog/cold-email-frameworks.html" }
