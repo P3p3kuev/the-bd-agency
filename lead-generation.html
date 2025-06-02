@@ -3,7 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lead Generation | The BD Agency</title>
+  <title>B2B Lead Generation Services | The BD Agency</title>
+  <meta name="description" content="Drive qualified leads and booked meetings with AI-powered campaigns. The BD Agency blends tech, targeting, and GTM expertise for high-performance lead generation." />
+  <link rel="canonical" href="https://www.thebdagency.com/lead-generation.html" />
+  <meta property="og:title" content="B2B Lead Generation Services | The BD Agency" />
+  <meta property="og:description" content="Get custom campaigns with intent-based targeting, AI-personalized emails, and ICP lists. Scale pipeline with confidence." />
+  <meta property="og:url" content="https://www.thebdagency.com/lead-generation.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.thebdagency.com/assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="B2B Lead Generation Services | The BD Agency" />
+  <meta name="twitter:description" content="Precision-powered B2B lead gen by GTM experts. Try our proven formula." />
+  <meta name="twitter:image" content="https://www.thebdagency.com/assets/og-image.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
@@ -23,8 +34,13 @@
       align-items: center;
       flex-wrap: wrap;
     }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
     nav a {
-      margin-left: 1.5rem;
       text-decoration: none;
       color: #60a5fa;
       font-weight: 600;
@@ -73,6 +89,7 @@
       flex-direction: column;
       gap: 1rem;
       margin-top: 2rem;
+      max-width: 600px;
     }
     input, textarea {
       padding: 12px;
@@ -92,6 +109,16 @@
     }
     button[type="submit"]:hover {
       background-color: #1e40af;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        flex-direction: column;
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -151,12 +178,31 @@
   <section id="contact-form">
     <h3>Let's Talk</h3>
     <p>Ready to scale your pipeline? Fill out the form below and we'll get in touch to plan your lead generation strategy.</p>
-    <form action="mailto:contact@thebdagency.com" method="post" enctype="text/plain">
+    <form id="lead-gen-form" action="https://formspree.io/f/mzbldzly" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" rows="5" placeholder="Tell us what you need..." required></textarea>
       <button type="submit">Send Inquiry</button>
+      <p id="lead-success-message" style="color: green; font-weight: 600; display: none;">Thank you! Your message has been sent.</p>
     </form>
+    <script>
+      const leadForm = document.getElementById('lead-gen-form');
+      leadForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const formData = new FormData(leadForm);
+        const response = await fetch(leadForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        if (response.ok) {
+          document.getElementById('lead-success-message').style.display = 'block';
+          leadForm.reset();
+        }
+      });
+    </script>
     <p>Prefer to chat directly?</p>
     <a href="https://wa.me/971585014000" class="cta-button" style="background-color:#25d366">Message Us on WhatsApp</a>
   </section>
