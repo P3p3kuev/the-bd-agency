@@ -1,83 +1,138 @@
-<section class="section" id="blog">
-  <h3>The BD Agency Blog</h3>
-  <p>Insights to grow pipeline, close faster, and scale smarter.</p>
-  <div class="blog-cards">
-    <div class="blog-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="icon">
-      <div class="blog-card-content">
-        <h4>Why B2B Lead Generation Important 2025</h4>
-        <a href="why-b2b-lead-generation-important-2025.html">Read More →</a>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | The BD Agency</title>
+  <meta name="description" content="Insights on lead generation, sales training, and AI outreach by The BD Agency." />
+  <meta name="keywords" content="B2B marketing, sales, AI, lead generation, GTM, blog" />
+  <meta property="og:title" content="The BD Agency Blog" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Insights and playbooks to help you close faster and scale smarter." />
+  <meta property="og:image" content="https://www.thebdagency.com/assets/og-image.jpg" />
+  <meta property="og:url" content="https://www.thebdagency.com/blog.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #1a1a1a;
+      background-color: #f7f9fb;
+    }
+    header, footer {
+      background-color: #0f172a;
+      color: white;
+      padding: 1.5rem 2rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #60a5fa;
+      font-weight: 600;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .section p {
+      font-size: 1.125rem;
+      line-height: 1.6;
+    }
+    .blog-cards {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .blog-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.2s ease;
+    }
+    .blog-card:hover {
+      transform: scale(1.03);
+    }
+    .blog-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .blog-card-content {
+      padding: 1rem;
+    }
+    .blog-card-content h4 {
+      margin-top: 0;
+      color: #1e3a8a;
+      font-size: 1.125rem;
+    }
+    .blog-card-content a {
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 0.75rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.875rem;
+      margin-top: 4rem;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="font-size: 1.5rem; font-weight: 800;">The BD Agency</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="lead-generation.html">Lead Generation</a>
+      <a href="sales-training.html">Sales Training</a>
+      <a href="ai-caller.html">AI Caller</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </header>
+
+  <section class="section" id="blog">
+    <h3>The BD Agency Blog</h3>
+    <p>Insights to grow pipeline, close faster, and scale smarter.</p>
+    <div class="blog-cards">
+      <!-- Blog cards injected here -->
+      {{CANVAS}}
     </div>
-    <div class="blog-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/3449/3449914.png" alt="icon">
-      <div class="blog-card-content">
-        <h4>Top 7 Lead Gen</h4>
-        <a href="top-7-lead-gen.html">Read More →</a>
-      </div>
-    </div>
-    <div class="blog-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="icon">
-      <div class="blog-card-content">
-        <h4>Cold E Mail Is Not Dead</h4>
-        <a href="cold-e-mail-is-not-dead.html">Read More →</a>
-      </div>
-    </div>
-    <div class="blog-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/5974/5974636.png" alt="icon">
-      <div class="blog-card-content">
-        <h4>The Ultimate Guide To Ai</h4>
-        <a href="the-ultimate-guide-to-ai.html">Read More →</a>
-      </div>
-    </div>
-    <div class="blog-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/2038/2038759.png" alt="icon">
-      <div class="blog-card-content">
-        <h4>LinkedIn Organic Plus Social Selling</h4>
-        <a href="linkedln-organic-plus-social-selling.html">Read More →</a>
-      </div>
-    </div>
-    <div class="blog-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="icon">
-      <div class="blog-card-content">
-        <h4>Calendar The Bd Agencyy</h4>
-        <a href="calendar-the-bd-agencyy.html">Read More →</a>
-      </div>
-    </div>
-    <div class="blog-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/482/482476.png" alt="icon">
-      <div class="blog-card-content">
-        <h4>Zero Click Seo</h4>
-        <a href="zero-click-seo.html">Read More →</a>
-      </div>
-    </div>
-    <div class="blog-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/1907/1907555.png" alt="icon">
-      <div class="blog-card-content">
-        <h4>Behavior Based Email Sequences</h4>
-        <a href="behavior-based-email-sequences.html">Read More →</a>
-      </div>
-    </div>
-    <div class="blog-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/1484/1484862.png" alt="icon">
-      <div class="blog-card-content">
-        <h4>What Sales Tasks You Should Automate</h4>
-        <a href="what-sales-tasks-you-should-automate.html">Read More →</a>
-      </div>
-    </div>
-    <div class="blog-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/3159/3159957.png" alt="icon">
-      <div class="blog-card-content">
-        <h4>History Of The New Era Of Ia</h4>
-        <a href="history-of-the-new-era-of-ia.html">Read More →</a>
-      </div>
-    </div>
-    <div class="blog-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="icon">
-      <div class="blog-card-content">
-        <h4>Why Is B2B Lead Generation Important In 2025</h4>
-        <a href="why-b2b-lead-generation-important.html">Read More →</a>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 The BD Agency. All rights reserved.</p>
+  </footer>
+</body>
+</html>
