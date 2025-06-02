@@ -3,13 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Caller | The BD Agency</title>
+  <title>AI Sales Rep | Voice-Based Lead Engagement | The BD Agency</title>
+  <meta name="description" content="Deploy a GPT-powered voice assistant that calls prospects, qualifies leads, and books meetings. Discover The BD Agency’s AI Caller solution." />
+  <link rel="canonical" href="https://www.thebdagency.com/ai-caller.html" />
+  <meta property="og:title" content="AI Sales Rep | Voice-Based Lead Engagement | The BD Agency" />
+  <meta property="og:description" content="AI Caller uses your voice and pitch logic to scale outbound sales calls. Qualify and convert leads automatically." />
+  <meta property="og:url" content="https://www.thebdagency.com/ai-caller.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.thebdagency.com/assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Sales Rep | Voice-Based Lead Engagement | The BD Agency" />
+  <meta name="twitter:description" content="Let AI handle your outbound calls while you sleep. Qualify, engage, and book meetings 24/7." />
+  <meta name="twitter:image" content="https://www.thebdagency.com/assets/og-image.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body { margin: 0; font-family: 'Inter', sans-serif; background-color: #f9fafb; color: #1f2937; }
     header, footer { background-color: #0f172a; color: white; padding: 1.5rem 2rem; }
     header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-    nav a { margin-left: 1.5rem; text-decoration: none; color: #60a5fa; font-weight: 600; }
+    nav { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
+    nav a { text-decoration: none; color: #60a5fa; font-weight: 600; }
     section { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; }
     h1, h2, h3 { color: #1e3a8a; }
     p, li { font-size: 1.125rem; line-height: 1.6; }
@@ -28,7 +40,7 @@
       height: auto;
     }
     form {
-      display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;
+      display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; max-width: 600px;
     }
     input, textarea {
       padding: 12px; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px; width: 100%;
@@ -38,6 +50,16 @@
       font-size: 1rem; border-radius: 6px; cursor: pointer;
     }
     button[type="submit"]:hover { background-color: #1e40af; }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -82,12 +104,31 @@
 
   <section id="contact-form">
     <h3>Let’s Build Your AI Sales Assistant</h3>
-    <form action="mailto:contact@thebdagency.com" method="post" enctype="text/plain">
+    <form id="ai-caller-form" action="https://formspree.io/f/mzbldzly" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" rows="5" placeholder="Tell us what you're looking for..." required></textarea>
       <button type="submit">Send Inquiry</button>
+      <p id="ai-success-message" style="color: green; font-weight: 600; display: none;">Thank you! Your message has been sent.</p>
     </form>
+    <script>
+      const aiForm = document.getElementById('ai-caller-form');
+      aiForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const formData = new FormData(aiForm);
+        const response = await fetch(aiForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        if (response.ok) {
+          document.getElementById('ai-success-message').style.display = 'block';
+          aiForm.reset();
+        }
+      });
+    </script>
     <p>Prefer to chat directly?</p>
     <a href="https://wa.me/971585014000" class="cta-button" style="background-color:#25d366">Message Us on WhatsApp</a>
   </section>
@@ -97,3 +138,4 @@
   </footer>
 </body>
 </html>
+
