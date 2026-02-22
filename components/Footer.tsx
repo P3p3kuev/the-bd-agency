@@ -44,21 +44,9 @@ export function Footer() {
               Company
             </h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Case Studies
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Insights
-                </a>
-              </li>
+              <li className="text-gray-500">About</li>
+              <li className="text-gray-500">Case Studies</li>
+              <li className="text-gray-500">Insights</li>
             </ul>
           </div>
 
@@ -92,12 +80,8 @@ export function Footer() {
             Architecture™ and EVA™ are trademarks of BD Agency.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-gray-300 transition">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-gray-300 transition">
-              Terms of Service
-            </a>
+            <span className="text-gray-500">Privacy Policy</span>
+            <span className="text-gray-500">Terms of Service</span>
           </div>
         </div>
       </div>

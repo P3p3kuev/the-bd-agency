@@ -37,7 +37,8 @@ export function Header({ onCtaClick }: HeaderProps) {
               alt="BD Agency"
               width={32}
               height={32}
-              className="h-8 w-auto"
+              priority
+              className="h-8 w-8"
             />
           </Link>
         </div>
