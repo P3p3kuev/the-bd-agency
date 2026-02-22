@@ -42,7 +42,7 @@ export default function Home() {
               <Button variant="primary" size="lg" onClick={openModal}>
                 Request Executive Revenue Assessment
               </Button>
-              <Button variant="secondary" size="lg">
+              <Button variant="secondary" size="lg" onClick={() => window.location.href = '/methodology'}>
                 Explore Enterprise Value Architecture™
               </Button>
             </div>
