@@ -313,7 +313,7 @@ export default function Home() {
               variant="primary"
               size="lg"
               onClick={openModal}
-              className="bg-white text-navy-900 hover:bg-gray-100 focus:ring-offset-navy-900"
+              className="bg-white !text-navy-900 hover:bg-gray-100 focus:ring-offset-navy-900"
             >
               Request Executive Revenue Assessment
             </Button>

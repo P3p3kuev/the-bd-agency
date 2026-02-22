@@ -27,9 +27,9 @@ export function Button({
 
   const variantClasses = {
     primary:
-      'bg-navy-900 text-white hover:bg-navy-800 active:bg-navy-900 focus:outline-none focus:ring-2 focus:ring-navy-900 focus:ring-offset-2',
+      'bg-navy-900 text-white hover:bg-navy-800 active:bg-navy-900 focus:outline-none focus:ring-2 focus:ring-navy-900 focus:ring-offset-2 rounded',
     secondary:
-      'border-2 border-navy-900 text-navy-900 bg-white hover:bg-navy-50 active:bg-navy-100 focus:outline-none focus:ring-2 focus:ring-navy-900 focus:ring-offset-2',
+      'border-2 border-navy-900 text-navy-900 bg-white hover:bg-navy-50 active:bg-navy-100 focus:outline-none focus:ring-2 focus:ring-navy-900 focus:ring-offset-2 rounded',
   };
 
   return (
