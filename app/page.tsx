@@ -310,10 +310,10 @@ export default function Home() {
             </p>
 
             <Button
-              variant="primary"
+              variant="secondary"
               size="lg"
               onClick={openModal}
-              className="bg-white text-navy-900 hover:bg-gray-100 focus:ring-offset-navy-900"
+              className="border-0 rounded"
             >
               Request Executive Revenue Assessment
             </Button>
