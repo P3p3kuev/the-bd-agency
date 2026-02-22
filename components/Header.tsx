@@ -36,10 +36,11 @@ export function Header({ onCtaClick }: HeaderProps) {
             <Image
               src="/logo.jpg"
               alt="The BD Agency"
-              width={32}
-              height={32}
+              width={400}
+              height={154}
               priority
-              className="h-8 w-8"
+              sizes="(max-width: 768px) 140px, 180px"
+              className="h-8 w-auto"
             />
           </Link>
         </div>
