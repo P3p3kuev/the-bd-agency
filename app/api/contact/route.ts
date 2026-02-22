@@ -31,10 +31,10 @@ export async function POST(request: NextRequest) {
     }
 
     // TODO: In production, integrate with your email service (SendGrid, Mailgun, etc.)
-    // For now, this is a placeholder that logs the data
+    // Log only non-sensitive metadata; do not log PII
     console.log('Assessment Request Received:', {
       timestamp: new Date().toISOString(),
-      ...body,
+      requestId: crypto.randomUUID(),
     });
 
     // You could send an email here using a service like:

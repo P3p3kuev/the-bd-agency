@@ -125,7 +125,7 @@ export function ContactForm({ onSuccess }: ContactFormProps) {
           Assessment Requested
         </h3>
         <p className="text-sm text-gray-600">
-          We'll be in touch within 24 hours to schedule your Executive Revenue
+          We&apos;ll be in touch within 24 hours to schedule your Executive Revenue
           Assessment.
         </p>
       </div>
