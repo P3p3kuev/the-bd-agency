@@ -1,6 +1,27 @@
+'use client';
+
+import { useState } from 'react';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { Modal } from '@/components/Modal';
+import { ContactForm } from '@/components/ContactForm';
+
 export default function Methodology() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
+  const handleFormSuccess = () => {
+    setTimeout(() => {
+      closeModal();
+    }, 2000);
+  };
+
   return (
-    <main className="min-h-screen bg-white">
+    <>
+      <Header onCtaClick={openModal} />
+      <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="px-6 py-24 md:py-32 border-b border-gray-200">
         <div className="max-w-6xl mx-auto">
@@ -358,14 +379,13 @@ export default function Methodology() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="px-6 py-12 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-xs text-gray-500">
-            Enterprise Revenue Architecture™ and EVA™ are trademarks of BD Agency.
-          </p>
-        </div>
-      </footer>
-    </main>
+      </main>
+
+      <Footer />
+
+      <Modal isOpen={modalOpen} onClose={closeModal} title="Executive Revenue Assessment">
+        <ContactForm onSuccess={handleFormSuccess} />
+      </Modal>
+    </>
   );
 }
