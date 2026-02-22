@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface HeaderProps {
   onCtaClick?: () => void;
@@ -31,7 +31,7 @@ export function Header({ onCtaClick }: HeaderProps) {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <a href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <Image
               src="/logo.jpg"
               alt="BD Agency"
@@ -39,20 +39,20 @@ export function Header({ onCtaClick }: HeaderProps) {
               height={32}
               className="h-8 w-auto"
             />
-          </a>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           {sections.map((section) =>
             section.href ? (
-              <a
+              <Link
                 key={section.label}
                 href={section.href}
                 className="text-sm text-gray-700 hover:text-navy-900 transition-colors font-medium"
               >
                 {section.label}
-              </a>
+              </Link>
             ) : (
               <button
                 key={section.id}
@@ -105,13 +105,13 @@ export function Header({ onCtaClick }: HeaderProps) {
           <div className="px-6 py-4 space-y-3">
             {sections.map((section) =>
               section.href ? (
-                <a
+                <Link
                   key={section.label}
                   href={section.href}
                   className="block w-full text-left text-sm text-gray-700 hover:text-navy-900 font-medium py-2"
                 >
                   {section.label}
-                </a>
+                </Link>
               ) : (
                 <button
                   key={section.id}
