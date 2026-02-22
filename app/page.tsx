@@ -5,7 +5,7 @@ export default function Home() {
       <section className="px-6 py-20 md:py-32 max-w-6xl mx-auto">
         <div className="max-w-4xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy-900 mb-6 leading-tight">
-            If Your Forecast Requires Negotiation, It Isn't Control.
+            If Your Forecast Requires Negotiation, It Isn&apos;t Control.
           </h1>
           <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed max-w-2xl">
             Revenue volatility in enterprise sales is rarely a market problem. It is usually structural.
@@ -233,7 +233,7 @@ export default function Home() {
           <div className="border-l-4 border-navy-900 pl-6">
             <h3 className="font-semibold text-navy-900 mb-2">Deal Probability</h3>
             <p className="text-sm text-gray-700">
-              Probability is set by qualification gate status, not by sales judgment. Probability updates when qualification criteria change, not when deals "feel good."
+              Probability is set by qualification gate status, not by sales judgment. Probability updates when qualification criteria change, not when deals &quot;feel good.&quot;
             </p>
           </div>
 
